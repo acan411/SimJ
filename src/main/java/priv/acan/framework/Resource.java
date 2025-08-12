@@ -1,5 +1,8 @@
 package priv.acan.framework;
 
+import lombok.Getter;
+import priv.acan.framework.intf.Request;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -11,10 +14,11 @@ import java.util.Queue;
  */
 public class Resource {
 
-    private Environment env;
-    private int capacity;
+    private final Environment env;
+    @Getter
+    private final int capacity;
+    private final Queue<Request> queue = new LinkedList<>();
     private int available;
-    private Queue<Request> queue = new LinkedList<>();
 
     public Resource(Environment env, int capacity) {
         this.env = env;
@@ -43,10 +47,6 @@ public class Resource {
             request.succeed();
             available--;
         }
-    }
-
-    public interface Request {
-        void succeed();
     }
 
 }

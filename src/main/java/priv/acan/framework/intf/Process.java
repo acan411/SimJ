@@ -1,4 +1,4 @@
-package priv.acan.framework;
+package priv.acan.framework.intf;
 
 /**
  * 进程接口

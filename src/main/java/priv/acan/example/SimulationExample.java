@@ -10,6 +10,7 @@ import priv.acan.framework.Timeout;
  * @since 2025/08/12 14:28
  */
 public class SimulationExample {
+
     public static void main(String[] args) {
         Environment env = new Environment();
         Timeout timeout = new Timeout(env);
@@ -23,4 +24,5 @@ public class SimulationExample {
 
         env.run(10);
     }
+
 }

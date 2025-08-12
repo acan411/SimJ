@@ -1,5 +1,7 @@
 package priv.acan.framework;
 
+import priv.acan.framework.intf.Process;
+
 import java.util.PriorityQueue;
 
 /**
@@ -11,7 +13,7 @@ import java.util.PriorityQueue;
 public class Environment {
 
     private double now = 0;
-    private PriorityQueue<Event> eventQueue = new PriorityQueue<>();
+    private final PriorityQueue<Event> eventQueue = new PriorityQueue<>();
 
     public double now() {
         return now;

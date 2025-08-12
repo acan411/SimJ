@@ -8,7 +8,7 @@ package priv.acan.framework;
  */
 public abstract class Event implements Comparable<Event> {
 
-    double time;
+    protected double time;
 
     @Override
     public int compareTo(Event other) {

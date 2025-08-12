@@ -11,6 +11,7 @@ import priv.acan.framework.Timeout;
  * @since 2025/08/12 14:28
  */
 public class ResourceExample {
+
     public static void main(String[] args) {
         Environment env = new Environment();
         Resource resource = new Resource(env, 2); // 容量为2的资源
@@ -35,4 +36,5 @@ public class ResourceExample {
 
         env.run(10);
     }
+
 }
