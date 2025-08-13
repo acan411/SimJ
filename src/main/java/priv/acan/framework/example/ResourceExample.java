@@ -1,4 +1,4 @@
-package priv.acan.example;
+package priv.acan.framework.example;
 
 import priv.acan.framework.Environment;
 import priv.acan.framework.Resource;
